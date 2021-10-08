@@ -53,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'platzigram.middleware.ProfileCompletionMiddleware',
 ]
 
 ROOT_URLCONF = 'platzigram.urls'
@@ -137,7 +136,7 @@ STATICFILES_FINDERS = [
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'users:login'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
